@@ -733,7 +733,7 @@ a {
 }
 @media (min-width: 1440px) {
   .header {
-    height: 100vh;
+    /*height: 100vh;*/
     padding-bottom: 70px;
   }
 }
@@ -1097,6 +1097,10 @@ a {
     background-size: 34px 34px;
   }
 }
+.promo__item:hover::before {
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
 @media (min-width: 1440px) {
   .promo__item {
     padding: 5px 0 0 20px;
@@ -1139,7 +1143,7 @@ a {
 }
 @media (min-width: 1440px) {
   .description {
-    height: 100vh;
+    /*height: 100vh;*/
     padding: 59px 0 0 0;
     margin-bottom: 65px;
   }
