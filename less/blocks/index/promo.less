@@ -177,6 +177,7 @@
   .offset(0; 0 0 10% 0);
   .typography(14px; 22px);
 
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -200,6 +201,11 @@
       height: 58px;
       background-size: 34px 34px;
     }
+  }
+
+  &:hover::before {
+    transform: scale(1.1);
+    transition: 0.3s ease;
   }
 
   @media (min-width: @desktop-width) {
