@@ -1,0 +1,150 @@
+.header {
+  position: relative;
+  .offset(17px 0 48px 0; 0);
+  background: linear-gradient(90deg, @white1 0%, @blue 100%);
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 100vh;
+    padding-bottom: 70px;
+  }
+}
+
+.header__inner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  .offset(0; 0 0 40px 0);
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    padding-right: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 36px;
+  }
+}
+
+.header__logo {
+  order: 1;
+  display: block;
+  width: 150px;
+  height: 23px;
+
+  @media (min-width: @desktop-width) {
+    width: 275px;
+    height: 43px;
+  }
+}
+
+.header__contacts-wrapper {
+  order: 3;
+
+  @media (min-width: @tablet-width) {
+    flex-grow: 1;
+    display: flex;
+    order: 2;
+  }
+}
+
+.header__contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  .offset(0; 0 0 10px 0);
+  font-style: normal;
+  .typography(14px; 21px);
+
+  @media (min-width: @tablet-width) {
+    margin-right: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+    margin-top: 2px;
+  }
+}
+
+.header__contacts-city {
+  margin-right: 5px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 10px;
+  }
+}
+
+.header__phone {
+  display: flex;
+  flex-wrap: wrap;
+  .offset(0; 0);
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+    margin-top: 0;
+    margin-left: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+  }
+}
+
+.header__phone-number {
+  margin-right: 20px;
+  font-weight: 700;
+  .typography(16px; 24px);
+  color: @blue1;
+
+  &:hover,
+  &:focus {
+    color: @blue2;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -1px;
+    margin-right: 25px;
+  }
+}
+
+.header__phone-backcall {
+  position: relative;
+  .typography(13px; 24px);
+  color: @red;
+  transition: 0.4s ease;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 102px;
+    height: 1px;
+    background-color: @red;
+  }
+
+  &:hover,
+  &:focus {
+    color: #ff3030;
+  }
+
+  &:hover::before {
+    background-color: #ff3030;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -5px;
+    margin-left: 50px;
+
+    &::before {
+      bottom: 5px;
+    }
+  }
+}
