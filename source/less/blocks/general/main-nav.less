@@ -16,7 +16,7 @@
   list-style-type: none;
   text-transform: uppercase;
   text-align: center;
-  transition: all 0.7s ease;
+  transition: visibility 0.7s ease, opacity 0.7s ease;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
@@ -64,7 +64,7 @@
   height: 2px;
   background-color: @white;
   box-shadow: 0 -4px @white, 0 4px @white;
-  transition: 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .main-nav--opened .main-nav__button-toggle {
@@ -75,7 +75,7 @@
     width: 19px;
     height: 2px;
     background-color: @white;
-    transition: 0.4s ease;
+    transition: all 0.4s ease;
   }
 
   &::before {
@@ -93,6 +93,7 @@
   transform: translateX(-100px);
   width: 0;
   height: 0;
+  transition: visibility 0.7s ease, opacity 0.7s ease;
 }
 
 .main-nav--opened .main-nav__list {
@@ -101,6 +102,7 @@
   transform: translateX(0);
   width: auto;
   height: auto;
+  transition: all 0.7s ease;
 }
 
 .main-nav__link {
@@ -108,7 +110,7 @@
   .offset(5px; 0);
   .typography(18px; 24px);
   color: @blue1;
-  transition: 0.3s ease;
+  transition: 0.4s ease;
 
   &:hover,
   &:focus {
