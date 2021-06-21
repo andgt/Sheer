@@ -1261,13 +1261,13 @@ a {
   }
 }
 .description__inner {
+  display: none;
   max-width: 500px;
   padding: 0;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
   .description__inner {
-    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, -webkit-max-content));
     grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
     max-width: 100%;
@@ -1277,6 +1277,14 @@ a {
 @media (min-width: 1440px) {
   .description__inner {
     margin: 0;
+  }
+}
+.description__inner--tab {
+  display: block;
+}
+@media (min-width: 768px) {
+  .description__inner--tab {
+    display: grid;
   }
 }
 .description__text {
