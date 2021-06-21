@@ -98,11 +98,11 @@
 }
 
 .description__inner {
+  display: none;
   max-width: 500px;
   .offset(0; 0 auto);
 
   @media (min-width: @tablet-width) {
-    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
     max-width: 100%;
     margin: 0 0 60px 0;
@@ -110,6 +110,14 @@
 
   @media (min-width: @desktop-width) {
     margin: 0;
+  }
+}
+
+.description__inner--tab {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
   }
 }
 
